@@ -44,14 +44,13 @@ public class TypingTutor implements KeyListener {
 	@Override
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
-		System.out.println((char)e.getKeyCode());
-		if((char)e.getKeyCode() ==currentLetter) {
+		System.out.println((char) e.getKeyCode());
+		if ((char) e.getKeyCode() == currentLetter) {
 			System.out.println("Correct");
-			frame.setBackground(new Color(0,255,0));
-		}
-		else {
+			frame.getContentPane().setBackground(new Color(0, 255, 0));
+		} else {
 			System.out.println("Incorrect");
-			frame.setBackground(new Color(255,0,0));
+			frame.getContentPane().setBackground(new Color(255, 0, 0));
 		}
 	}
 
