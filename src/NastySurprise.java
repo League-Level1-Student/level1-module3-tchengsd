@@ -20,9 +20,9 @@ public class NastySurprise implements ActionListener {
 		frame.add(panel);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		first.setText("TWICK");
+		first.setText("Trick");
 		first.addActionListener(this);
-		secound.setText("TREET");
+		secound.setText("Treat");
 		secound.addActionListener(this);
 		panel.add(first);
 		panel.add(secound);
@@ -40,7 +40,7 @@ public class NastySurprise implements ActionListener {
 		if (e.getSource() == first) {
 			showPictureFromTheInternet("http://www.pictorem.com/collection/900_2331348HighRes.jpg");
 		} else if (e.getSource() == secound) {
-			showPictureFromTheInternet("https://i.ytimg.com/vi/z2iCIF6p7CU/maxresdefault.jpg");
+			showPictureFromTheInternet("https://ih1.redbubble.net/image.410068489.3517/ap,550x550,12x12,1,transparent,t.png");
 		}
 
 	}
