@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 public class SlotMachine implements ActionListener {
 	JFrame frame;
@@ -188,6 +189,11 @@ public class SlotMachine implements ActionListener {
 				}
 			}
 			frame.pack();
+			if ((rNum == 0 && otherR == 0 && newR == 0) 
+					|| (rNum == 1 && otherR == 1 && newR == 1)
+					|| (rNum == 2 && otherR == 2 && newR == 2)) {
+				JOptionPane.showMessageDialog(null, "YOU WIN!");
+			}
 		}
 	}
 }
